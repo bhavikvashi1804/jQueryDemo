@@ -34,8 +34,12 @@
           $("p").show();
         });
 
-        $("#btn4").on("click",()=>{
+        $("#btn4").on("dblclick",()=>{
             $("p").toggle();
+        });
+
+        $("#btn5").on("click",()=>{
+            $("p").wrap("<h1>");
         });
       });
     </script>
@@ -48,5 +52,7 @@
     <button id="btn3">Show</button>
 
     <button id="btn4">Toggle it</button>
+
+    <button id="btn5">Wrap the content</button>
   </body>
 </html>
