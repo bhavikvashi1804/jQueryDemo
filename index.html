@@ -22,18 +22,25 @@
         });
 
         //pick by type
-        $(":button").click(() => {
-            
-          $('p').css({"color":"red","fontSize":"22px"});
+        $("#btn1").click(() => {
+          $("p").css({ color: "red", fontSize: "22px" });
         });
 
         //$("[attributeName]")
+        $("#btn2").click(() => {
+          $("p").hide();
+        });
+        $("#btn3").click(() => {
+          $("p").show();
+        });
       });
     </script>
   </head>
   <body>
     <p>Hello</p>
     <hr />
-    <input type="button" value="Hide it" />
+    <button id="btn1">Change</button>
+    <button id="btn2">Hide</button>
+    <button id="btn3">Show</button>
   </body>
 </html>
