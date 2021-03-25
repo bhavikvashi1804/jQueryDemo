@@ -33,6 +33,10 @@
         $("#btn3").click(() => {
           $("p").show();
         });
+
+        $("#btn4").on("click",()=>{
+            $("p").toggle();
+        });
       });
     </script>
   </head>
@@ -42,5 +46,7 @@
     <button id="btn1">Change</button>
     <button id="btn2">Hide</button>
     <button id="btn3">Show</button>
+
+    <button id="btn4">Toggle it</button>
   </body>
 </html>
