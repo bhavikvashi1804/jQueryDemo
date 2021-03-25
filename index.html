@@ -41,6 +41,14 @@
         $("#btn5").on("click",()=>{
             $("p").wrap("<h1>");
         });
+
+
+        $("p").mouseover(()=>{
+            $("p").css("color","red");
+        });
+        $("p").mouseout(()=>{
+            $("p").css("color","black");
+        });
       });
     </script>
   </head>
