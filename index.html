@@ -74,6 +74,14 @@
         $("#btn10").on("click", () => {
           $("p").toggleClass("c1");
         });
+
+        $("#btn11").click(() => {
+          $("#para1").appendTo("#para2");
+        });
+        $("#btn12").click(() => {
+          $("#para1").prependTo("#para2");
+        });
+
       });
     </script>
     <style>
@@ -115,5 +123,11 @@
     <button id="btn8">Add Style</button>
     <button id="btn9">Remove Style</button>
     <button id="btn10">Toggle Style</button>
+
+    <hr />
+    <p id="para1">Hello</p>
+    <p id="para2">My Name is Bhavik</p>
+    <button id="btn11">appendTo</button>
+    <button id="btn12">prependTo</button>
   </body>
 </html>
