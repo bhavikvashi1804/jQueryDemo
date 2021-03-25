@@ -82,6 +82,16 @@
           $("#para1").prependTo("#para2");
         });
 
+        $("#btn13").click(() => {
+          $("#para3").fadeIn(500);
+        });
+        $("#btn14").click(() => {
+          $("#para3").fadeOut(500);
+        });
+
+        //slideUp
+        //slideDown
+
       });
     </script>
     <style>
@@ -129,5 +139,9 @@
     <p id="para2">My Name is Bhavik</p>
     <button id="btn11">appendTo</button>
     <button id="btn12">prependTo</button>
+
+    <p id="para3">My Name is Bhavik</p>
+    <button id="btn13">Fade In</button>
+    <button id="btn14">Fade Out</button>
   </body>
 </html>
