@@ -34,20 +34,23 @@
           $("p").show();
         });
 
-        $("#btn4").on("dblclick",()=>{
-            $("p").toggle();
+        $("#btn4").on("dblclick", () => {
+          $("p").toggle();
         });
 
-        $("#btn5").on("click",()=>{
-            $("p").wrap("<h1>");
+        $("#btn5").on("click", () => {
+          $("p").wrap("<h1>");
         });
 
-
-        $("p").mouseover(()=>{
-            $("p").css("color","red");
+        $("p").mouseover(() => {
+          $("p").css("color", "red");
         });
-        $("p").mouseout(()=>{
-            $("p").css("color","black");
+        $("p").mouseout(() => {
+          $("p").css("color", "black");
+        });
+
+        $("#btn6").on("click", () => {
+          $("#div1").text("Content added");
         });
       });
     </script>
@@ -62,5 +65,10 @@
     <button id="btn4">Toggle it</button>
 
     <button id="btn5">Wrap the content</button>
+
+    <hr />
+
+    <div id="div1"></div>
+    <button id="btn6">add the content</button>
   </body>
 </html>
