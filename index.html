@@ -71,14 +71,8 @@
           $("p").removeClass("c1");
         });
 
-        $(":text").focus(() => {
-          console.log("Yes In");
-          $(this).css("background-color", "#f7e1ec");
-        });
-        $(":text").blur(() => {
-          console.log("Yes Out");
-          $(this).css("background-color", "white");
-          //$(this).removeClass("userInput");
+        $("#btn10").on("click", () => {
+          $("p").toggleClass("c1");
         });
       });
     </script>
@@ -120,5 +114,6 @@
     <hr />
     <button id="btn8">Add Style</button>
     <button id="btn9">Remove Style</button>
+    <button id="btn10">Toggle Style</button>
   </body>
 </html>
