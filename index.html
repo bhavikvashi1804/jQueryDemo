@@ -20,11 +20,20 @@
         $("#btn").click(() => {
           alert("Button clicked");
         });
+
+
+        //pick by type
+        $(":button").click(() => {
+          alert("Button 1");
+        });
+
       });
     </script>
   </head>
   <body>
     <h1>Hello</h1>
     <button id="btn">Hide the para</button>
+    <hr>
+    <input type="button" value="Hide it">
   </body>
 </html>
