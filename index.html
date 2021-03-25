@@ -72,16 +72,19 @@
         });
 
         $("#task").focus(() => {
-          $(this).css("background-color", "#f7ec34");
+          $(this).addClass("userInput");
         });
         $("#task").blur(() => {
-          $(this).css("background-color", "white");
+          $(this).removeClass("userInput");
         });
       });
     </script>
     <style>
       .c1 {
         background-color: blueviolet;
+      }
+      .userInput {
+        background-color: coral;
       }
     </style>
   </head>
