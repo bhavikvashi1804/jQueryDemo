@@ -63,8 +63,24 @@
           //alert(text1);
           $("#tasks").append("<li>" + text1 + "</li>");
         });
+
+        $("#btn8").on("click", () => {
+          $("p").addClass("c1");
+        });
+
+        $("#task").focus(() => {
+          $(this).css("background-color", "#f7ec34");
+        });
+        $("#task").blur(() => {
+          $(this).css("background-color", "white");
+        });
       });
     </script>
+    <style>
+      .c1 {
+        background-color: blueviolet;
+      }
+    </style>
   </head>
   <body>
     <p>Hello</p>
@@ -89,7 +105,10 @@
     <ul id="tasks"></ul>
     <br />
     Enter the task: <input type="text" id="task" />
-    <br>
+    <br />
     <input type="button" id="btn7" value="Add Task" />
+
+    <hr />
+    <button id="btn8">Add Style</button>
   </body>
 </html>
