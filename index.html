@@ -4,10 +4,16 @@
     <title>jQueryDemo</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        $(document).ready(()=>{
-            alert("Hello")
+      $(document).ready(() => {
+        //alert("Hello");
+        $("button").click(() => {
+          alert("Button clicked");
         });
+      });
     </script>
   </head>
-  <body></body>
+  <body>
+    <h1>Hello</h1>
+    <button>Hide the para</button>
+  </body>
 </html>
