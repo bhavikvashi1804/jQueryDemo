@@ -89,9 +89,15 @@
           $("#para3").fadeOut(500);
         });
 
+        $("#btn15").click(() => {
+          $("#para4").slideUp();
+        });
+        $("#btn16").click(() => {
+          $("#para4").slideDown();
+        });
+
         //slideUp
         //slideDown
-
       });
     </script>
     <style>
@@ -143,5 +149,9 @@
     <p id="para3">My Name is Bhavik</p>
     <button id="btn13">Fade In</button>
     <button id="btn14">Fade Out</button>
+
+    <p id="para4">My Name is Bhavik</p>
+    <button id="btn15">Slide Up</button>
+    <button id="btn16">Slide Down</button>
   </body>
 </html>
