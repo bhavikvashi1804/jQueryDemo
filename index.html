@@ -50,7 +50,12 @@
         });
 
         $("#btn6").on("click", () => {
-          $("#div1").text("Content added");
+          //$("#div1").text("Content added");
+          var text1 = $("#name").val();
+          //normal text add
+          // $("#div1").text(text1);
+          //whole html element add
+          $("#div1").html("<h2>" + text1 + "</h2>");
         });
       });
     </script>
@@ -67,8 +72,10 @@
     <button id="btn5">Wrap the content</button>
 
     <hr />
-
+    Enter your name:
+    <input type="text" id="name" />
     <div id="div1"></div>
+    <br />
     <button id="btn6">add the content</button>
   </body>
 </html>
