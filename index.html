@@ -57,6 +57,12 @@
           //whole html element add
           $("#div1").html("<h2>" + text1 + "</h2>");
         });
+
+        $("#btn7").on("click", () => {
+          var text1 = $("#task").val();
+          //alert(text1);
+          $("#tasks").append("<li>" + text1 + "</li>");
+        });
       });
     </script>
   </head>
@@ -77,5 +83,13 @@
     <div id="div1"></div>
     <br />
     <button id="btn6">add the content</button>
+
+    <hr />
+    <h1>Manage your ToDo</h1>
+    <ul id="tasks"></ul>
+    <br />
+    Enter the task: <input type="text" id="task" />
+    <br>
+    <input type="button" id="btn7" value="Add Task" />
   </body>
 </html>
