@@ -71,13 +71,14 @@
           $("p").removeClass("c1");
         });
 
-        $("#task").focus(() => {
+        $(":text").focus(() => {
           console.log("Yes In");
-          $(this).addClass("userInput");
+          $(this).css("background-color", "#f7e1ec");
         });
-        $("#task").blur(() => {
+        $(":text").blur(() => {
           console.log("Yes Out");
-          $(this).removeClass("userInput");
+          $(this).css("background-color", "white");
+          //$(this).removeClass("userInput");
         });
       });
     </script>
