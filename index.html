@@ -67,6 +67,9 @@
         $("#btn8").on("click", () => {
           $("p").addClass("c1");
         });
+        $("#btn9").on("click", () => {
+          $("p").removeClass("c1");
+        });
 
         $("#task").focus(() => {
           $(this).css("background-color", "#f7ec34");
@@ -110,5 +113,6 @@
 
     <hr />
     <button id="btn8">Add Style</button>
+    <button id="btn9">Remove Style</button>
   </body>
 </html>
