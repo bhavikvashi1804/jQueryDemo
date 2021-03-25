@@ -72,9 +72,11 @@
         });
 
         $("#task").focus(() => {
+          console.log("Yes In");
           $(this).addClass("userInput");
         });
         $("#task").blur(() => {
+          console.log("Yes Out");
           $(this).removeClass("userInput");
         });
       });
