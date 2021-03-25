@@ -4,9 +4,20 @@
     <title>jQueryDemo</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
+      /*
       $(document).ready(() => {
         //alert("Hello");
         $("button").click(() => {
+          //alert("Button clicked");
+        });
+      });
+      */
+      $(document).ready(() => {
+        //alert("Hello");
+
+        //to select by class use .className
+        // $(".class1")
+        $("#btn").click(() => {
           alert("Button clicked");
         });
       });
@@ -14,6 +25,6 @@
   </head>
   <body>
     <h1>Hello</h1>
-    <button>Hide the para</button>
+    <button id="btn">Hide the para</button>
   </body>
 </html>
