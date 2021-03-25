@@ -83,10 +83,14 @@
         });
 
         $("#btn13").click(() => {
-          $("#para3").fadeIn(500);
+          $("#para3").fadeIn(500, function () {
+            $("#para3").css("color", "blue");
+          });
         });
         $("#btn14").click(() => {
-          $("#para3").fadeOut(500);
+          $("#para3").fadeOut(500, function () {
+            $("#para3").css("color", "red");
+          });
         });
 
         $("#btn15").click(() => {
@@ -94,6 +98,10 @@
         });
         $("#btn16").click(() => {
           $("#para4").slideDown();
+        });
+
+        $("#btn17").click(() => {
+          $("#myDiv").toggle(5000);
         });
 
         //slideUp
@@ -153,5 +161,15 @@
     <p id="para4">My Name is Bhavik</p>
     <button id="btn15">Slide Up</button>
     <button id="btn16">Slide Down</button>
+
+    <hr />
+
+    <div
+      id="myDiv"
+      style="width: 100px; height: 100px; background-color: blueviolet"
+    >
+      My Div
+    </div>
+    <button id="btn17">Toggle</button>
   </body>
 </html>
